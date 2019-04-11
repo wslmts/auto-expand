@@ -1,0 +1,19 @@
+{
+  "manifest_version":2,
+  "name":"auto-expand",
+  "version":"1.0",
+  "description":"自动展开阅读更多",
+ 
+  "content_scripts": [
+    {
+        "matches": ["*://blog.csdn.net/*"],
+        "js": ["background.js"]
+    }
+  ],
+  "icons": {
+    "16": "images/online.png"
+  },
+  "permissions":[
+    "*://blog.csdn.net/*"
+  ]
+}
